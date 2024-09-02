@@ -1,0 +1,253 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  /*         font-family: "Bebas Neue", sans-serif;
+ font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        
+        */
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textNav {
+  color: rgb(119, 119, 119);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  cursor: crosshair;
+  z-index: 5;
+}
+.textNav:hover {
+  color: rgb(239, 239, 239);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.btnNav {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 2px solid rgb(119, 119, 119);
+  color: rgb(119, 119, 119);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  background-color: black;
+  cursor: pointer;
+  z-index: 5;
+}
+.btnNav:hover {
+  border: 2px solid rgb(237, 64, 0);
+  background-color: rgb(237, 64, 0);
+  color: black;
+}
+.section1 {
+  margin-top: -60px;
+  width: auto;
+  height: auto;
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.section2 {
+  width: auto;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+
+}
+.titulo {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.titulo2 {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.textTitle1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
+  font-size: 23.5rem;
+  letter-spacing: -10px;
+  cursor: crosshair;
+}
+.textTitle1:hover {
+  color: rgb(255, 255, 255);
+}
+.guion {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textTitle2 {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(119, 119, 119);
+  cursor: crosshair;
+}
+.textTitle2:hover {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(239, 239, 239);
+}
+
+.textTitle3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
+  font-size: 23.5rem;
+  letter-spacing: -10px;
+  cursor: crosshair;
+}
+.textTitle3:hover {
+  color: rgb(255, 255, 255);
+}
+.textTitle4 {
+  margin-top: -210px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: rgb(237, 64, 0);
+  font-size: 23.5rem;
+  letter-spacing: -10px;
+  cursor: crosshair;
+  z-index: 15;
+}
+
+.scrollDown {
+  margin-top: -210px;
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: crosshair;
+}
+.scrollDown p {
+  color: rgb(119, 119, 119);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.flecha {
+  width: 30px;
+}
+
+.img1Section2 {
+    position: relative; 
+    width: 100%;
+    height: 60vh;
+    background-image: url(./img/bloque2.1.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+}
+  .img1Section2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }
+  
+  .img1Section2 > * {
+    position: relative;
+    z-index: 2; 
+  }
+.textWeb {
+  width: 20%;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
+  font-size: 5rem;
+  cursor: crosshair;
+  position: absolute;
+  margin-top: 280px;
+  margin-left: 900px;
+ 
+}
+
+.bloqueSection2 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+ z-index: 30;
+}
+
+.block1 {
+  width: 30%;
+  height: 40vh;
+  background-image: url(./img/portada.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.block2 {
+    width: 20%;
+  height: 40vh;
+  background-image: url(./img//EloiGinesti\ foto.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.block3 {
+    width: 20%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block4 {
+width: 30%;
+  height: 40vh;
+ background-color: rgb(119, 119, 119);
+
+}
+.redes{
+    width: 100%;
+    height: 20vh;
+background-color: rgb(237, 64, 0);
+
+}
+.redesFoto{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(17, 17, 17);
+  
+}
+
