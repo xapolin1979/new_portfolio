@@ -46,15 +46,21 @@ nav {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 0.9em;
-  background-color: black;
+  background-color: black; /* Fondo inicial negro */
+  background-image: linear-gradient(to top, rgb(237, 64, 0) 50%,  rgb(17, 17, 17) 50%);
+  background-size: 100% 200%;
+  background-position: 0 0;
   cursor: pointer;
   z-index: 5;
+  transition: background-position 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
+
 .btnNav:hover {
-  border: 2px solid rgb(237, 64, 0);
-  background-color: rgb(237, 64, 0);
-  color: black;
+  border: 2px solid rgb(237, 64, 0); /* Cambia el color del borde a naranja */
+  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color naranja */
+  color: black; /* Cambia el color del texto a negro */
 }
+
 .section1 {
   margin-top: -60px;
   width: auto;
@@ -91,14 +97,23 @@ nav {
 .textTitle1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  color: rgb(119, 119, 119);
+  color: rgb(119, 119, 119); /* Color de texto inicial */
   font-size: 23.5rem;
   letter-spacing: -10px;
   cursor: crosshair;
+  background-image: linear-gradient(to top, rgb(255, 255, 255) 50%, rgb(119, 119, 119) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100% 200%;
+  background-position: 0 0;
+  transition: background-position 0.8s ease, color 0.5s ease;
 }
+
 .textTitle1:hover {
-  color: rgb(255, 255, 255);
+  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color blanco */
 }
+
 .guion {
   width: 50%;
   height: 70vh;
@@ -109,36 +124,61 @@ nav {
 .textTitle2 {
   width: 100%;
   height: 30px;
-  background-color: rgb(119, 119, 119);
+  background-color: rgb(119, 119, 119); /* Color inicial del fondo */
+  background-image: linear-gradient(to top, rgb(255, 255, 255) 50%, rgb(119, 119, 119) 50%);
+  background-size: 100% 200%;
+  background-position: 0 0;
   cursor: crosshair;
+  transition: background-position 0.5s ease;
 }
+
 .textTitle2:hover {
-  width: 100%;
-  height: 30px;
-  background-color: rgb(239, 239, 239);
+  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color más claro */
 }
+
 
 .textTitle3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  color: rgb(119, 119, 119);
   font-size: 23.5rem;
   letter-spacing: -10px;
   cursor: crosshair;
+  color: rgb(119, 119, 119); /* Color del texto inicial */
+  background-image: linear-gradient(to top, rgb(255, 255, 255) 50%, rgb(119, 119, 119) 50%);
+  background-size: 100% 200%;
+  background-position: 0 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.8s ease;
 }
+
 .textTitle3:hover {
-  color: rgb(255, 255, 255);
+  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color blanco */
 }
+
 .textTitle4 {
   margin-top: -210px;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  color: rgb(237, 64, 0);
   font-size: 23.5rem;
   letter-spacing: -10px;
   cursor: crosshair;
   z-index: 15;
+  color: rgb(237, 64, 0); /* Color inicial del texto */
+  background-image: linear-gradient(to top,rgb(255,255,255) 50%,  rgb(237, 64, 0)50%);
+  background-size: 100% 200%;
+  background-position: 0 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.8s ease;
 }
+
+.textTitle4:hover {
+  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color blanco */
+}
+
 
 .scrollDown {
   margin-top: -210px;
@@ -159,17 +199,29 @@ nav {
 .flecha {
   width: 30px;
 }
-
+.section2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(17,17,17);
+}
 .img1Section2 {
     position: relative; 
-    width: 100%;
-    height: 60vh;
-    background-image: url(./img/bloque2.1.jpg);
+    width: 60%;
+    height: 50vh;
+    background-image: url(./img/portada.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden; 
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 3px solid rgb(17,17,17);
 }
-  .img1Section2::before {
+   .img1Section2::before {
     content: '';
     position: absolute;
     top: 0;
@@ -183,21 +235,18 @@ nav {
   .img1Section2 > * {
     position: relative;
     z-index: 2; 
+  } 
+  .textoimg1Sction2 {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(237, 64, 0);
+  
   }
-.textWeb {
-  width: 20%;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  color: rgb(119, 119, 119);
-  font-size: 5rem;
-  cursor: crosshair;
-  position: absolute;
-  margin-top: 280px;
-  margin-left: 900px;
- 
-}
+  
 
-.bloqueSection2 {
+  
+
+/* .bloqueSection2 {
   width: 100%;
   height: 40vh;
   display: flex;
@@ -249,5 +298,5 @@ background-color: rgb(237, 64, 0);
     height: 20vh;
     background-color: rgb(17, 17, 17);
   
-}
+} */
 
