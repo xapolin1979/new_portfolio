@@ -48,8 +48,26 @@ if (!isSmallScreen.matches) {
       toggleActions: "play pause play reverse",
     }
   });
-
-
+  gsap.to(".section1", {
+    backgroundColor: "white",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".textTitle4",
+      start: "top 40%",
+      end: "bottom",
+      toggleActions: "play pause play reverse",
+    }
+  });
+  gsap.to(".section2", {
+    backgroundColor: "white",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".textTitle4",
+      start: "top 40%",
+      end: "bottom",
+      toggleActions: "play pause play reverse",
+    }
+  });
 
   gsap.to(".scrollDown", {
     y: 20,
@@ -72,19 +90,41 @@ if (!isSmallScreen.matches) {
      }
    });
 
-   gsap.to(".img1Section2 ", {
-     scale: 2,
-     duration: 1,
-     scrollTrigger: {
-       trigger: ".section3",
-       start: "top 60% ",
-       end: "top",
-       markers: true,
-       toggleActions: "play pause play reverse",
-     }
-   });
 
-
+ /*   gsap.to(".section2 ", {
+    backgroundColor: "white",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".section3",
+      start: "top 80%  ",
+      end: "bottom",
+      markers: true,
+      toggleActions: "play pause play reverse",
+    }
+  });
+  gsap.to(".section3 ", {
+    backgroundColor: "white",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".section3",
+      start: "top 80%  ",
+      end: "bottom",
+      markers: true,
+      toggleActions: "play pause play reverse",
+    }
+  });
+  gsap.to(".textoimg1Section2  ", {
+    backgroundColor: "rgb(17,17,17)",
+    color: "white",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".section3",
+      start: "top 80%  ",
+      end: "bottom",
+      markers: true,
+      toggleActions: "play pause play reverse",
+    }
+  }); */
    
  
 
