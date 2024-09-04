@@ -38,7 +38,8 @@ if (!isSmallScreen.matches) {
   });
 
   gsap.to(".textTitle4", {
-    x: -700,
+    y: 400,
+    scale: 0.5,
     duration: 1,
     scrollTrigger: {
       trigger: ".textTitle4",
@@ -48,16 +49,7 @@ if (!isSmallScreen.matches) {
     }
   });
 
-/*   gsap.to(".section1", {
-    backgroundColor: "rgb(119, 119, 119)",
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".textTitle4",
-      start: "top",
-      end: "bottom",
-      toggleActions: "play pause play reverse",
-    }
-  }); */
+
 
   gsap.to(".scrollDown", {
     y: 20,
@@ -66,25 +58,34 @@ if (!isSmallScreen.matches) {
     repeat: -1,
     yoyo: true
   });
-  gsap.to(".img1Section2 ", {
-   scale: 1.5,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".textTitle4",
-      start: "top",
-      end: "bottom",
-      toggleActions: "play pause play reverse",
-    }
-  });
-  gsap.to(".textoimg1Sction2 ", {
-   x:-580,
+
+  gsap.to(".textoimg1Section2 ", {
+   x:-100,
+   opacity: 1,
+   width:'45%',
      duration: 1,
      scrollTrigger: {
-       trigger: ".textoimg1Sction2",
-       start: "top 50%",
+       trigger: ".textoimg1Section2",
+       start: "top 75%",
        end: "bottom",
        toggleActions: "play pause play reverse",
      }
    });
+
+   gsap.to(".img1Section2 ", {
+     scale: 2,
+     duration: 1,
+     scrollTrigger: {
+       trigger: ".section3",
+       start: "top 60% ",
+       end: "top",
+       markers: true,
+       toggleActions: "play pause play reverse",
+     }
+   });
+
+
+   
+ 
 
 }

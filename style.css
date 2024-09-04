@@ -10,7 +10,9 @@
         
         */
 }
-
+html {
+  scroll-behavior: smooth;
+}
 nav {
   width: 100%;
   height: 100px;
@@ -166,7 +168,7 @@ nav {
   cursor: crosshair;
   z-index: 15;
   color: rgb(237, 64, 0); /* Color inicial del texto */
-  background-image: linear-gradient(to top,rgb(255,255,255) 50%,  rgb(237, 64, 0)50%);
+  background-image: linear-gradient(to top, rgb(255, 255, 255)50%, rgb(237, 64, 0)50%);
   background-size: 100% 200%;
   background-position: 0 0;
   background-clip: text;
@@ -176,7 +178,7 @@ nav {
 }
 
 .textTitle4:hover {
-  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color blanco */
+  background-position: 0 100%; 
 }
 
 
@@ -210,93 +212,59 @@ nav {
 }
 .img1Section2 {
     position: relative; 
-    width: 60%;
-    height: 50vh;
+    width: 80%;
+    height: 60vh;
     background-image: url(./img/portada.jpg);
     background-size: cover;
     background-position: center;
-    overflow: hidden; 
+   
   display: flex;
   justify-content: start;
   align-items: center;
-  border: 3px solid rgb(17,17,17);
+  background-color: rgb(17,17,17);
+
+  
 }
-   .img1Section2::before {
+
+    .img1Section2::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.4); 
     z-index: 1; 
+   
   }
-  
+
   .img1Section2 > * {
     position: relative;
     z-index: 2; 
-  } 
-  .textoimg1Sction2 {
+  }   
+  .textoimg1Section2 {
     width: 100%;
-    height: 60vh;
-    background-color: rgb(237, 64, 0);
-  
+    height: 30vh;
+   background-color: white ;
+    color: rgb(0, 0, 0);
+   opacity: 0;
+   padding: 20px;
+   font-family: "Open Sans", sans-serif;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
   }
-  
 
-  
 
-/* .bloqueSection2 {
-  width: 100%;
-  height: 40vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
- z-index: 30;
+  /*SECCION3*/
+
+  .section3{
+width: 100%;
+height: 100vh;
+background-color: rgb(17,17,17);
+overflow: hidden;
 }
 
-.block1 {
-  width: 30%;
-  height: 40vh;
-  background-image: url(./img/portada.jpg);
-  background-size: cover;
-  background-position: center;
-
-}
-.block2 {
-    width: 20%;
-  height: 40vh;
-  background-image: url(./img//EloiGinesti\ foto.png);
-  background-size: cover;
-  background-position: center;
-
-}
-
-
-.block3 {
-    width: 20%;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.block4 {
-width: 30%;
-  height: 40vh;
- background-color: rgb(119, 119, 119);
-
-}
-.redes{
-    width: 100%;
-    height: 20vh;
-background-color: rgb(237, 64, 0);
-
-}
-.redesFoto{
-    width: 100%;
-    height: 20vh;
-    background-color: rgb(17, 17, 17);
-  
-} */
 
