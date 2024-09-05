@@ -38,28 +38,7 @@ if (!isSmallScreen.matches) {
   });
 
   gsap.to(".textTitle4", {
-    y: 400,
-    scale: 0.5,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".textTitle4",
-      start: "top 40%",
-      end: "bottom",
-      toggleActions: "play pause play reverse",
-    }
-  });
-  gsap.to(".section1", {
-    backgroundColor: "white",
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".textTitle4",
-      start: "top 40%",
-      end: "bottom",
-      toggleActions: "play pause play reverse",
-    }
-  });
-  gsap.to(".section2", {
-    backgroundColor: "white",
+    x: -500,
     duration: 1,
     scrollTrigger: {
       trigger: ".textTitle4",
@@ -69,6 +48,16 @@ if (!isSmallScreen.matches) {
     }
   });
 
+/*   gsap.to(".section1", {
+    backgroundColor: "rgb(232, 226, 218)",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".textTitle4",
+      start: "top 40%",
+      end: "bottom",
+      toggleActions: "play pause play reverse",
+    }
+  });  */
   gsap.to(".scrollDown", {
     y: 20,
     duration: 0.6,
@@ -77,8 +66,23 @@ if (!isSmallScreen.matches) {
     yoyo: true
   });
 
+  
+  //section2
+
+/*    gsap.to(".section2", {
+    backgroundColor: "rgb(232, 226, 218)",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".textTitle4",
+      start: "top 40%",
+      end: "bottom",
+      toggleActions: "play pause play reverse",
+    }
+  });
+  */
+
   gsap.to(".textoimg1Section2 ", {
-   x:-100,
+    x:-100,
    opacity: 1,
    width:'45%',
      duration: 1,
@@ -89,8 +93,26 @@ if (!isSmallScreen.matches) {
        toggleActions: "play pause play reverse",
      }
    });
-
-
+   gsap.to(".textoimg1Section2 ", {
+    y:-150,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".section3",
+        start: "top 80%",
+        end: "bottom",
+        toggleActions: "play pause play reverse",
+      }
+    });
+    gsap.to(".img1Section2  ", {
+      y:-150,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".section3",
+          start: "top 80%",
+          end: "bottom",
+          toggleActions: "play pause play reverse",
+        }
+      });
  /*   gsap.to(".section2 ", {
     backgroundColor: "white",
     duration: 1,
