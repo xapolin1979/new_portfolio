@@ -1,9 +1,12 @@
+
 gsap.registerPlugin(ScrollTrigger);
 
-// Verificar si el ancho de la pantalla es menor a 1300px
-const isSmallScreen = window.matchMedia("(max-width: 1300px)");
+// Verificar si el ancho de la pantalla es menor a 1350px
+const isSmallScreen = window.matchMedia("(max-width: 1350px)");
 
 if (!isSmallScreen.matches) {
+
+  
   gsap.to(".textTitle1", {
     x: -400,
     duration: 1,
@@ -14,6 +17,7 @@ if (!isSmallScreen.matches) {
       toggleActions: "play pause play reverse",
     }
   });
+
 
   gsap.to(".guion", {
     scale: 1.2,
@@ -38,7 +42,8 @@ if (!isSmallScreen.matches) {
   });
 
   gsap.to(".textTitle4", {
-    x: -500,
+    y:400,
+    scale: 0.5,
     duration: 1,
     scrollTrigger: {
       trigger: ".textTitle4",
@@ -69,17 +74,6 @@ if (!isSmallScreen.matches) {
   
   //section2
 
-/*    gsap.to(".section2", {
-    backgroundColor: "rgb(232, 226, 218)",
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".textTitle4",
-      start: "top 40%",
-      end: "bottom",
-      toggleActions: "play pause play reverse",
-    }
-  });
-  */
 
   gsap.to(".textoimg1Section2 ", {
     x:-100,
@@ -94,60 +88,50 @@ if (!isSmallScreen.matches) {
      }
    });
    gsap.to(".textoimg1Section2 ", {
-    y:-150,
+    y:400,
       duration: 1,
       scrollTrigger: {
         trigger: ".section3",
-        start: "top 80%",
+        start: "top 60%",
         end: "bottom",
         toggleActions: "play pause play reverse",
       }
     });
     gsap.to(".img1Section2  ", {
-      y:-150,
+      y:650,
         duration: 1,
         scrollTrigger: {
           trigger: ".section3",
-          start: "top 80%",
+          start: "top 60%",
           end: "bottom",
           toggleActions: "play pause play reverse",
         }
       });
- /*   gsap.to(".section2 ", {
-    backgroundColor: "white",
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".section3",
-      start: "top 80%  ",
-      end: "bottom",
-      markers: true,
-      toggleActions: "play pause play reverse",
-    }
-  });
-  gsap.to(".section3 ", {
-    backgroundColor: "white",
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".section3",
-      start: "top 80%  ",
-      end: "bottom",
-      markers: true,
-      toggleActions: "play pause play reverse",
-    }
-  });
-  gsap.to(".textoimg1Section2  ", {
-    backgroundColor: "rgb(17,17,17)",
-    color: "white",
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".section3",
-      start: "top 80%  ",
-      end: "bottom",
-      markers: true,
-      toggleActions: "play pause play reverse",
-    }
-  }); */
-   
  
+   
+ //SECCION 3
+
+ let myText=new SplitType('.skills')
+
+ gsap.from(myText.chars,{
+  y:'100%',
+  stagger:0.1,
+  scrollTrigger: {
+          trigger: ".section3",
+          start: "top 60%",
+          end: "bottom",
+          toggleActions: "play pause play reverse",
+        }
+ })
+ gsap.to(".section3 ", {
+  width:'100%',
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".section3",
+      start: "top 60%",
+      end: "bottom",
+      toggleActions: "play pause play reverse",
+    }
+  });
 
 }

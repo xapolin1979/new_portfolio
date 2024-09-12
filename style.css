@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-
+ 
   /*         font-family: "Bebas Neue", sans-serif;
  font-family: "Open Sans", sans-serif;
         font-weight: 400;
@@ -10,13 +10,16 @@
         
         */
 }
+body{
+  background-color: rgb(232, 226, 218);
+}
 html {
   scroll-behavior: smooth;
 }
 nav {
   width: 100%;
-  height: 100px;
-  background-color: rgb(17, 17, 17);
+  height: 80px;
+  background-color:rgb(232, 226, 218);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +39,7 @@ nav {
   z-index: 5;
 }
 .textNav:hover {
-  color: rgb(239, 239, 239);
+  color: rgb(46, 42, 39);
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -48,9 +51,9 @@ nav {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 0.9em;
-  background-color: black; /* Fondo inicial negro */
-  background-image: linear-gradient(to top, rgb(237, 64, 0) 50%,  rgb(17, 17, 17) 50%);
-  background-size: 100% 200%;
+  background-color: rgb(232, 226, 218); /* Fondo inicial negro */
+  background-image: linear-gradient(to top, rgb(46, 42, 39) 50%,  rgb(232, 226, 218) 50%);
+  background-size: 100% 300%;
   background-position: 0 0;
   cursor: pointer;
   z-index: 5;
@@ -58,21 +61,22 @@ nav {
 }
 
 .btnNav:hover {
-  border: 2px solid rgb(237, 64, 0); /* Cambia el color del borde a naranja */
+  border: 2px solid rgb(46, 42, 39); /* Cambia el color del borde a naranja */
   background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color naranja */
-  color: black; /* Cambia el color del texto a negro */
+  color: rgb(232, 226, 218); /* Cambia el color del texto a negro */
 }
 
 .section1 {
-  margin-top: -60px;
-  width: auto;
+  width: 97%;
+  margin: 0px auto;
   height: auto;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(46, 42, 39);
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   flex-direction: column;
+overflow: hidden;
 
 }
 
@@ -93,22 +97,14 @@ nav {
 .textTitle1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  color: rgb(119, 119, 119); /* Color de texto inicial */
+  color:  rgb(232, 226, 218) ;
   font-size: 23.5rem;
   letter-spacing: -10px;
   cursor: crosshair;
-  background-image: linear-gradient(to top, rgb(232, 226, 218) 50%, rgb(119, 119, 119) 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: 100% 200%;
-  background-position: 0 0;
-  transition: background-position 0.8s ease, color 0.5s ease;
+
 }
 
-.textTitle1:hover {
-  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color blanco */
-}
+
 
 .guion {
   width: 50%;
@@ -120,17 +116,10 @@ nav {
 .textTitle2 {
   width: 100%;
   height: 30px;
-  background-color: rgb(119, 119, 119); /* Color inicial del fondo */
-  background-image: linear-gradient(to top, rgb(232, 226, 218) 50%, rgb(119, 119, 119) 50%);
-  background-size: 100% 200%;
-  background-position: 0 0;
-  cursor: crosshair;
-  transition: background-position 0.5s ease;
+  background-color:rgb(232, 226, 218);
+
 }
 
-.textTitle2:hover {
-  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color más claro */
-}
 
 
 .textTitle3 {
@@ -139,19 +128,11 @@ nav {
   font-size: 23.5rem;
   letter-spacing: -10px;
   cursor: crosshair;
-  color: rgb(119, 119, 119); /* Color del texto inicial */
-  background-image: linear-gradient(to top, rgb(232, 226, 218) 50%, rgb(119, 119, 119) 50%);
-  background-size: 100% 200%;
-  background-position: 0 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: background-position 0.8s ease;
+  color:  rgb(232, 226, 218);
+
 }
 
-.textTitle3:hover {
-  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color blanco */
-}
+
 
 .textTitle4 {
   margin-top: -210px;
@@ -160,20 +141,11 @@ nav {
   font-size: 23.5rem;
   letter-spacing: -10px;
   cursor: crosshair;
-  z-index: 15;
-  color: rgb(237, 64, 0); /* Color inicial del texto */
-  background-image: linear-gradient(to top,rgb(232, 226, 218) 50%, rgb(237, 64, 0)50%);
-  background-size: 100% 200%;
-  background-position: 0 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: background-position 0.8s ease;
+  color: rgb(211, 47, 47);
+
 }
 
-.textTitle4:hover {
-  background-position: 0 100%; 
-}
+
 
 
 .scrollDown {
@@ -186,7 +158,7 @@ nav {
   cursor: crosshair;
 }
 .scrollDown p {
-  color: rgb(119, 119, 119);
+  color: rgb(232, 226, 218);
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
@@ -197,12 +169,16 @@ nav {
 }
 .section2{
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: rgb(17, 17, 17);
+  background-color:   rgb(232, 226, 218) ;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .img1Section2 {
     position: relative; 
@@ -211,23 +187,22 @@ nav {
     background-image: url(./img/bloque2.1.jpg);
     background-size: cover;
     background-position: center;
-   
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: rgb(17,17,17);
+
 
   
 }
 
-        .img1Section2::before {
+         .img1Section2::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(17, 17, 17, 0.3); 
+    background-color: rgba(46, 42, 39, 0.5); 
     z-index: 1; 
    
   }
@@ -239,8 +214,8 @@ nav {
   .textoimg1Section2 {
     width: 100%;
     height: 50vh;
-   background-color: rgb(232, 226, 218) ;
-    color: rgb(56, 56, 56);
+   background-color: rgb(232, 226, 218)  ;
+    color:rgb(34, 34, 34);
    opacity: 0;
    padding: 20px;
    font-size: 1.2rem;
@@ -248,23 +223,72 @@ nav {
    font-weight: 600;
    display: flex;
    flex-direction: column;
- 
+ border:2px solid rgb(46, 42, 39);
 
   }
 .aboutMeH2{
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 5rem;
-  color:rgb(237, 64, 0)
+  color:  rgb(211, 47, 47);
 }
 
   /*SECCION3*/
 
   .section3{
-width: 100%;
+width: 0%;
 height: 100vh;
-background-color: rgb(56, 56, 56);
+display: flex;  
+justify-content: space-around;
+align-items: center;
+margin: 0px auto;
 overflow: hidden;
 }
 
 
+.skills {
+
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 15rem;
+  cursor: crosshair;
+  z-index: 15;
+  color:  rgb(211, 47, 47);
+
+
+}
+.divSkills{
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+.logoSkills{
+width: 100%;
+  height: 80vh;
+}
+.imgSkills{
+  width: 40%;
+  height: 80vh;
+  background-image: url(./img/skills.jpg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+.imgSkills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 42, 39, 0.5); 
+  z-index: 1; 
+ 
+}
+
+.imgSkills > * {
+  position: relative;
+  z-index: 2; 
+}    
