@@ -87,12 +87,15 @@ overflow: hidden;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+
 }
 .titulo2 {
   width: 95%;
   height: auto;
   display: flex;
   justify-content: space-between;
+
+
 }
 .textTitle1 {
   font-family: "Bebas Neue", sans-serif;
@@ -101,7 +104,7 @@ overflow: hidden;
   font-size: 23.5rem;
   letter-spacing: -10px;
   cursor: crosshair;
-
+ 
 }
 
 
@@ -117,7 +120,7 @@ overflow: hidden;
   width: 100%;
   height: 30px;
   background-color:rgb(232, 226, 218);
-
+  
 }
 
 
@@ -142,7 +145,6 @@ overflow: hidden;
   letter-spacing: -10px;
   cursor: crosshair;
   color: rgb(211, 47, 47);
-
 }
 
 
@@ -165,7 +167,7 @@ overflow: hidden;
 }
 
 .flecha {
-  width: 30px;
+  width: 20px;
 }
 .section2{
   width: 100%;
@@ -177,6 +179,7 @@ overflow: hidden;
   background-color:   rgb(232, 226, 218) ;
   position: relative;
   z-index: 1;
+  margin: 0px auto;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -195,7 +198,7 @@ overflow: hidden;
   
 }
 
-         .img1Section2::before {
+  .img1Section2::before {
     content: '';
     position: absolute;
     top: 0;
@@ -215,7 +218,7 @@ overflow: hidden;
     width: 100%;
     height: 50vh;
    background-color: rgb(232, 226, 218)  ;
-    color:rgb(34, 34, 34);
+    color:rgb(46, 42, 39);
    opacity: 0;
    padding: 20px;
    font-size: 1.2rem;
@@ -238,11 +241,14 @@ overflow: hidden;
   .section3{
 width: 0%;
 height: 100vh;
-display: flex;  
-justify-content: space-around;
+display: flex;
+flex-direction: column;  
+justify-content: center;
 align-items: center;
 margin: 0px auto;
 overflow: hidden;
+padding: 10px;
+
 }
 
 
@@ -250,45 +256,155 @@ overflow: hidden;
 
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 15rem;
+  font-size: 12rem;
   cursor: crosshair;
-  z-index: 15;
-  color:  rgb(211, 47, 47);
-
-
+  color:  #2e2a27;
+  
 }
+
 .divSkills{
-  width: 45%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+}
+
+.div2Skills{
+  width: 100%;
+  height: 80vh;
+background-color: #e8e2da;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 20;
+}
+.containerSkills1{
+  width: 50%;
+  height: 50vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+
 
 }
-.logoSkills{
-width: 100%;
-  height: 80vh;
+.containerSkills2{
+  width: 25%;
+  height: 60vh;
+  background-image: url(./img/portada3.jpg);
+  background-size: cover;
+  background-position: left;
+  margin: 5px;
 }
-.imgSkills{
-  width: 40%;
-  height: 80vh;
-  background-image: url(./img/skills.jpg);
+.containerSkills3{
+  width: 25%;
+  height: 60vh;
+  background-image: url(./img/portada3.jpg);
   background-size: cover;
   background-position: right;
-  position: relative;
+  margin: 5px;
 }
-.imgSkills::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 42, 39, 0.5); 
-  z-index: 1; 
+.cardSkills{
+  width: 70%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
  
 }
+.textoSkills{
+  width: 30%;
+  height: 100px;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+}
+.parrafoSkills{
+  color:  rgb(46, 42, 39);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.logosSkills1{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/javascript.png);
+  background-size: cover;
+  background-position: center;
 
-.imgSkills > * {
-  position: relative;
-  z-index: 2; 
-}    
+}
+.logosSkills2{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/typescript.png);
+  background-size: cover;
+  background-position: center;
+}
+.logosSkills3{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/php.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.logosSkills4{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/react.png);
+  background-size: cover;
+  background-position: center;
+
+}
+.logosSkills5{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/angular.png);
+  background-size: cover;
+  background-position: center;
+}
+.logosSkills6{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/nodejs.png);
+  background-size: cover;
+  background-position: center;
+}
+.logosSkills7{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/html-5.png);
+  background-size: cover;
+  background-position: center;
+
+}
+.logosSkills8{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/css-3.png);
+  background-size: cover;
+  background-position: center;
+}
+.logosSkills9{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/bootstrap.png);
+  background-size: cover;
+  background-position: center;
+}
+.logosSkills10{
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/mysql.png);
+  background-size: cover;
+  background-position: center;
+
+}
+.logosSkills11{
+  width: 60px;
+  height: 60px;
+
+}
+.logosSkills12{
+  width: 60px;
+  height: 60px;
+ 
+}

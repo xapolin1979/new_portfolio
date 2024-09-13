@@ -5,8 +5,18 @@ gsap.registerPlugin(ScrollTrigger);
 const isSmallScreen = window.matchMedia("(max-width: 1350px)");
 
 if (!isSmallScreen.matches) {
+  gsap.to(".section1", {
+    backgroundColor: "rgb(232, 226, 218)",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".textTitle4",
+      start: "top 40%",
+      end: "bottom",
+      toggleActions: "play pause play reverse",
+    }
+  });  
 
-  
+
   gsap.to(".textTitle1", {
     x: -400,
     duration: 1,
@@ -40,10 +50,12 @@ if (!isSmallScreen.matches) {
       toggleActions: "play pause play reverse",
     }
   });
+ 
 
-  gsap.to(".textTitle4", {
-    y:400,
-    scale: 0.5,
+ gsap.to(".textTitle4", {
+    x:-400,
+    duration: 1,
+    color: "rgb(232, 226, 218)",
     duration: 1,
     scrollTrigger: {
       trigger: ".textTitle4",
@@ -51,18 +63,9 @@ if (!isSmallScreen.matches) {
       end: "bottom",
       toggleActions: "play pause play reverse",
     }
-  });
+  }); 
 
-/*   gsap.to(".section1", {
-    backgroundColor: "rgb(232, 226, 218)",
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".textTitle4",
-      start: "top 40%",
-      end: "bottom",
-      toggleActions: "play pause play reverse",
-    }
-  });  */
+
   gsap.to(".scrollDown", {
     y: 20,
     duration: 0.6,
@@ -114,21 +117,21 @@ if (!isSmallScreen.matches) {
  let myText=new SplitType('.skills')
 
  gsap.from(myText.chars,{
-  y:'100%',
+  y:'10%',
   stagger:0.1,
   scrollTrigger: {
           trigger: ".section3",
-          start: "top 60%",
+          start: "top 80%",
           end: "bottom",
           toggleActions: "play pause play reverse",
         }
  })
- gsap.to(".section3 ", {
-  width:'100%',
-    duration: 1,
+ gsap.to(".section3  ", {
+  width: '96%',
+    duration: 2.2,
     scrollTrigger: {
       trigger: ".section3",
-      start: "top 60%",
+      start: "top 80%",
       end: "bottom",
       toggleActions: "play pause play reverse",
     }
