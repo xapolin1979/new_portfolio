@@ -95,7 +95,7 @@ if (!isSmallScreen.matches) {
       duration: 1,
       scrollTrigger: {
         trigger: ".section3",
-        start: "top 60%",
+        start: "top 65%",
         end: "bottom",
         toggleActions: "play pause play reverse",
       }
@@ -105,7 +105,7 @@ if (!isSmallScreen.matches) {
         duration: 1,
         scrollTrigger: {
           trigger: ".section3",
-          start: "top 60%",
+          start: "top 65%",
           end: "bottom",
           toggleActions: "play pause play reverse",
         }
@@ -117,11 +117,11 @@ if (!isSmallScreen.matches) {
  let myText=new SplitType('.skills')
 
  gsap.from(myText.chars,{
-  y:'10%',
+  y:'70%',
   stagger:0.1,
   scrollTrigger: {
           trigger: ".section3",
-          start: "top 80%",
+          start: "top 70%",
           end: "bottom",
           toggleActions: "play pause play reverse",
         }
@@ -132,7 +132,7 @@ if (!isSmallScreen.matches) {
     scrollTrigger: {
       trigger: ".section3",
       start: "top 80%",
-      end: "bottom",
+      end: "bottom ",
       toggleActions: "play pause play reverse",
     }
   });
